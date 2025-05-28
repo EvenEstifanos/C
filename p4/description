@@ -1,1 +1,25 @@
+In a Linux environment, a shell is a command-line interpreter that acts as an interface between the user and the operating system kernel. 
+It allows users to execute commands, run programs, and manage files through text-based input. 
+
+On startup, a "heading" is printed to indicate that Commando is running and a brief line is printed to indicate the presence of the help built-in.
+Users can exit by typing the exit command.
+Below is a demo of these feature.
+
+>> ./commando
+=== COMMANDO ver 2 ===
+Re-using existing output directory 'commando-dir'
+Type 'help' for supported commands
+[COMMANDO]>> help
+help                       : show this message
+exit                       : exit the program
+directory                  : show the directory used for command output
+history                    : list all jobs that have been started giving information on each
+pause <secs>               : pause for the given number of seconds which may be fractional
+info <cmdid>               : show detailed information on a command
+show-output <cmdid>        : print the output for given command number
+finish <cmdid>             : wait until the given command finishes running
+finish-all                 : wait for all running commands to finish
+source <filename>          : (MAKEUP) open and read input from the given file as though it were typed
+command <arg1> <arg2> ...  : non-built-in is run as a command and logged in history
+[COMMANDO]>> exit
 
