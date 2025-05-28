@@ -1,1 +1,63 @@
+Mazes will be encoded in simple text files several of which are present in the project codepack in the data/ directory. An example is:
 
+>> cat data/maze-simple2.txt
+rows: 7 cols: 16
+tiles:
+################
+#S             #
+# ### ###### # #
+# ### ##E  #   #
+# ### #### ##  #
+#              #
+################
+
+S marks the Start Tile where the search begins
+E marks the End Tile which is the goal to be reached
+# marks Wall tiles which are blocked and cannot be crossed
+Spaces are Open tiles which can be traversed
+The goal of the project is to create a program that will read this text file, construct and internal representation of the maze, 
+use a BFS to determine paths to all other tiles, and then print out the shortest path from the Start to End tile. 
+It is well summarized by a sample run.
+
+>> ./mazesolve_main data/maze-simple2.txt 
+maze: 7 rows 16 cols
+      (1,1) start
+      (3,8) end
+maze tiles:
+################
+#S             #
+# ### ###### # #
+# ### ##E  #   #
+# ### #### ##  #
+#              #
+################
+SOLUTION:
+maze: 7 rows 16 cols
+      (1,1) start
+      (3,8) end
+maze tiles:
+################
+#S             #
+#.### ###### # #
+#.### ##E..#   #
+#.### ####.##  #
+#..........    #
+################
+path length: 17
+ 0: SOUTH
+ 1: SOUTH
+ 2: SOUTH
+ 3: SOUTH
+ 4: EAST
+ 5: EAST
+ 6: EAST
+ 7: EAST
+ 8: EAST
+ 9: EAST
+10: EAST
+11: EAST
+12: EAST
+13: NORTH
+14: NORTH
+15: WEST
+16: WEST
