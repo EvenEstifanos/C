@@ -1,1 +1,5 @@
-
+The structure of this problem is to optimize a baseline version of an existing function.
+Colnorm_base is the base verision, 
+Colnorm_optm is the optimized verision, 
+-> Optimizing the efficiency of memory access to favor CPU caches
+-> Utilizing multiple threads to achieve some parallel execution. 
