@@ -1,4 +1,0 @@
-We are tasked with writing code which will be run by a microcontroller in a digital scale. The hardware has the following relevant features.
-An internal sensor detects weight that is on the scale. The value reported by the device is stored in a special hardware location that is presented as a global variable to C programs.
-A digital display controlled by a hardware port. Setting a certain global variable will change the display to show information to a user of the device.
-User code that you will need to write to update the display based on the value reported by the internal sensors.
