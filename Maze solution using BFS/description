@@ -1,4 +1,0 @@
-Breadth First Search (BFS) is a fundamental algorithm in computing that allows data modeled with mathematical graphs to be processed and analyzed for varying effects. 
-A classic usage of BFS is to determine the Shortest Path between a Start and End point in grid-like graphs such as in 2D mazes, sometimes referred to a "the dungeon problem"
-early computer games used text and characters to on the screen to draw dungeons that player would navigate. This project will process simple 2D maze data stored in text files and 
-determine the shortest path from a Start position to all other reachable positions in the maze including an End tile.
